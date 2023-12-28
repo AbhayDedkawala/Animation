@@ -10,37 +10,68 @@
 </head>
 
 <body>
-	<!-- <div style="background: url(./assets/images/poker-table.jpg) no-repeat; height: 788px; width: 1400px;"></div> -->
-	<div class="card border-0">
-		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle" height="50px" width="50px">
+	<div class="card border-0 text-center" data-user="Abhay">
+		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
 		<a href="#" class="text-decoration-none text-secondary">Abhay</a>
 	</div>
-	<div class="card border-0">
-		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Abhay</a>
+	<div class="card border-0 text-center" data-user="Nirav">
+		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
+		<a href="#" class="text-decoration-none text-secondary">Nirav</a>
 	</div>
-	<div class="card border-0">
-		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Abhay</a>
+	<div class="card border-0 text-center" data-user="Nilam">
+		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
+		<a href="#" class="text-decoration-none text-secondary">Nilam</a>
 	</div>
-	<div class="card border-0">
-		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Abhay</a>
+	<div class="card border-0 text-center" data-user="Divyesh">
+		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
+		<a href="#" class="text-decoration-none text-secondary">Divyesh</a>
 	</div>
-	<div class="card border-0" id="loginUser">
-		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Abhay</a>
+	<div class="card border-0 text-center" data-user="Dhruv">
+		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
+		<a href="#" class="text-decoration-none text-secondary">Dhruv</a>
+	</div>
+
+	<div class="modal fade" id="userModal" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="users" id="rdUsersAbhay" value="Abhay">
+						<label class="form-check-label" for="rdUsersAbhay">Abhay</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="users" id="rdUsersNirav" value="Nirav">
+						<label class="form-check-label" for="rdUsersNirav">Nirav</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="users" id="rdUsersNilam" value="Nilam">
+						<label class="form-check-label" for="rdUsersNilam">Nilam</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="users" id="rdUsersDivyesh" value="Divyesh">
+						<label class="form-check-label" for="rdUsersDivyesh">Divyesh</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="users" id="rdUsersDhruv" value="Dhruv">
+						<label class="form-check-label" for="rdUsersDhruv">Dhruv</label>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="modal fade" id="iconsModal" role="dialog" aria-hidden="true">
 		<div class="modal-dialog m-0 position-fixed" role="document">
 			<div class="modal-content">
 				<div class="modal-body">
-					<img style="background:url('./assets/images/eggs.png') 0 0 cover no-repeat" height="176" width="176" />
+					<img style="background:url('./assets/images/eggs.png') 0 0 no-repeat" height="176" width="176"
+						data-image="./assets/images/eggs.png" />
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<div id="emoji"></div>
 	<script type="text/javascript" src="./assets/js/jquery-3.7.1.min.js"></script>
 	<script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="./assets/js/script.js"></script>
