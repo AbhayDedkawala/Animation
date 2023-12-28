@@ -1,0 +1,40 @@
+.card {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+}
+
+.card img {
+    border: 1px solid var(--bs-gray-300);
+}
+
+.card:nth-child(1) {
+    top: 0px;
+    left: 0px;
+}
+
+.card:nth-child(2) {
+    top: 0px;
+    left: 300px;
+}
+
+.card:nth-child(3) {
+    top: 300px;
+    left: 0px;
+}
+
+.card:nth-child(4) {
+    top: 300px;
+    left: 300px;
+}
+
+.card:nth-child(5) {
+    top: 450px;
+    left: 150px;
+}
+
+@keyframes sprite {
+    100% {
+        background-position: 100% 0;
+    }
+}
