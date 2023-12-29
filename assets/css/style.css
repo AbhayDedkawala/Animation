@@ -32,15 +32,3 @@
     top: 450px;
     left: 150px;
 }
-
-@keyframes sprite-image {
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-@keyframes sprite-user {
-    100% {
-        background-position: 100% 0;
-    }
-}

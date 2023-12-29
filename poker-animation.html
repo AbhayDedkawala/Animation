@@ -10,50 +10,53 @@
 </head>
 
 <body>
-	<div class="card border-0 text-center" data-user="Abhay">
+	<div class="card border-0 text-center" data-user="Player1">
 		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Abhay</a>
+		<a href="#" class="text-decoration-none text-secondary">Player 1</a>
 	</div>
-	<div class="card border-0 text-center" data-user="Nirav">
+	<div class="card border-0 text-center" data-user="Player2">
 		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Nirav</a>
+		<a href="#" class="text-decoration-none text-secondary">Player 2</a>
 	</div>
-	<div class="card border-0 text-center" data-user="Nilam">
+	<div class="card border-0 text-center" data-user="Player3">
 		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Nilam</a>
+		<a href="#" class="text-decoration-none text-secondary">Player 3</a>
 	</div>
-	<div class="card border-0 text-center" data-user="Divyesh">
+	<div class="card border-0 text-center" data-user="Player4">
 		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Divyesh</a>
+		<a href="#" class="text-decoration-none text-secondary">Player 4</a>
 	</div>
-	<div class="card border-0 text-center" data-user="Dhruv">
+	<div class="card border-0 text-center" data-user="Player5">
 		<img src="./assets/images/user-solid.svg" class="p-2 rounded-circle mx-auto" height="50px" width="50px">
-		<a href="#" class="text-decoration-none text-secondary">Dhruv</a>
+		<a href="#" class="text-decoration-none text-secondary">Player 5</a>
 	</div>
 
 	<div class="modal fade" id="userModal" role="dialog" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Select Login / Current User</h5>
+				</div>
 				<div class="modal-body">
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="users" id="rdUsersAbhay" value="Abhay">
-						<label class="form-check-label" for="rdUsersAbhay">Abhay</label>
+						<input class="form-check-input" type="radio" name="users" id="rdUsersPlayer1" value="Player1">
+						<label class="form-check-label" for="rdUsersPlayer1">Player 1</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="users" id="rdUsersNirav" value="Nirav">
-						<label class="form-check-label" for="rdUsersNirav">Nirav</label>
+						<input class="form-check-input" type="radio" name="users" id="rdUsersPlayer2" value="Player2">
+						<label class="form-check-label" for="rdUsersPlayer2">Player 2</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="users" id="rdUsersNilam" value="Nilam">
-						<label class="form-check-label" for="rdUsersNilam">Nilam</label>
+						<input class="form-check-input" type="radio" name="users" id="rdUsersPlayer3" value="Player3">
+						<label class="form-check-label" for="rdUsersPlayer3">Player 3</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="users" id="rdUsersDivyesh" value="Divyesh">
-						<label class="form-check-label" for="rdUsersDivyesh">Divyesh</label>
+						<input class="form-check-input" type="radio" name="users" id="rdUsersPlayer4" value="Player4">
+						<label class="form-check-label" for="rdUsersPlayer4">Player 4</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="users" id="rdUsersDhruv" value="Dhruv">
-						<label class="form-check-label" for="rdUsersDhruv">Dhruv</label>
+						<input class="form-check-input" type="radio" name="users" id="rdUsersPlayer5" value="Player5">
+						<label class="form-check-label" for="rdUsersPlayer5">Player 5</label>
 					</div>
 				</div>
 			</div>
@@ -63,14 +66,17 @@
 	<div class="modal fade" id="iconsModal" role="dialog" aria-hidden="true">
 		<div class="modal-dialog m-0 position-fixed" role="document">
 			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Select Emojis</h5>
+				</div>
 				<div class="modal-body">
 					<img style="background:url('./assets/images/eggs.png') 0 0 no-repeat" height="176" width="176"
-						data-image="./assets/images/eggs.png" />
+						data-image="./assets/images/eggs.png" data-frames="36" data-frames-layout="horizontal" />
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<div id="emoji"></div>
 	<script type="text/javascript" src="./assets/js/jquery-3.7.1.min.js"></script>
 	<script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
