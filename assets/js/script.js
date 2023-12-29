@@ -26,11 +26,11 @@ $("div.card").click(function (event) {
 $("#iconsModal img").click(function () {
     $("#iconsModal").modal("hide");
 
-    const animationDuration = 3;
+    const animationDuration = 2.5;
     const fromLeft = $("div[data-user='" + localStorage.getItem("user") + "']")[0].offsetLeft;
     const fromTop = $("div[data-user='" + localStorage.getItem("user") + "']")[0].offsetTop;
-    const htmlEmoji = `<img style="background:url('${this.dataset.image}') 0 0 no-repeat;position:absolute;top:${fromTop}px;left:${fromLeft}px;z-index:10;animation:sprite-image ${animationDuration}s steps(36) 1" height=176 width=176 />`;
-    const spriteImageStyle = `<style>@keyframes sprite-image{100% {background-position: ${this.dataset.framesLayout == "horizontal" ? "100% 0" : "0 100%"};top:${toY}px;left:${toX}px;}}</style>`;
+    const htmlEmoji = `<img src="${this.src}" style="object-position: 0 0;object-fit:cover;position:absolute;top:${fromTop}px;left:${fromLeft}px;z-index:10;animation:sprite-image ${animationDuration}s steps(${this.dataset.frames}) 1" height=${this.height} width=${this.width} />`;
+    const spriteImageStyle = `<style>@keyframes sprite-image{to {object-position: ${this.dataset.framesLayout == "horizontal" ? "100% 0" : "0 100%"};top:${toY}px;left:${toX}px;}}</style>`;
     $("#emoji").html(htmlEmoji + spriteImageStyle);
 
     setTimeout(function () {

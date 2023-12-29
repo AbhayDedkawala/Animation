@@ -32,3 +32,8 @@
     top: 450px;
     left: 150px;
 }
+
+#iconsModal .modal-body img {
+    object-position: 0 0;
+    object-fit: cover;
+}
